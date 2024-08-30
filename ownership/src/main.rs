@@ -162,4 +162,8 @@ println!("{}", score); // this will print
 
 // the above value is being copied, not moved.
 
+// by default if the type doesn't implement Copy trait then when you assign it, it will move instead of copy.
+// for String data type, we don't have Copy trait implemented, but we have Clone and the difference is that 
+// that needs to be called explicitly
+
 }
